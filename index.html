@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="hello.css">
+<script>
+
+
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length;}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none"  
+  }
+  x[slideIndex-1].style.display = "block";
+}
+
+</script>
+	<style>
+.mySlides {display:none;}
+.img-active{display: block;}
+</style>
+</head>
+<body>
+	<header class="bg-header">
+		<img class="mySlides img-active" style="position: absolute;width: 100%;height: 800px;" src="image/bg.png" alt="">
+		 <img class="mySlides" src="image/bg.png" style="width:100%;position: absolute;height: 800px;">
+		 <img class="mySlides" style="position: absolute;width: 100%;height: 800px;" src="image/bg.png" alt="">
+		 <img class="mySlides" src="image/bg.png" style="width:100%;position: absolute;height: 800px;">
+			<div class="menu">
+				<div class="wrap-menu" style="">
+					<a href="#"><img src="image/logo.png" alt=""></a>
+						<ul>
+					
+					<li><a class="active ab" href="#"><span class="active-text">HOME</span></a>
+						<div class="dropdown-space"></div></li>
+					 <li class="dropdown">
+					    <a href="nhaBan.html" class="dropbtn ab">NHÀ BÁN</a>
+					    <div class="dropdown-space"></div><div class="dropdown-content">
+					      <a style="border:none;" href="#">Nhà mới</a>
+					      <a href="#">Nhà riêng</a>
+					      <a href="#">Nhà chung cư</a>
+					      <a class="last-drop" href="#">Nhà đặt cọc</a>
+					    </div>
+					 </li>
+											
+					<li><a class="ab" href="#">NHÀ THUÊ</a><div class="dropdown-space"></div></li>
+					<li class="dropdown">
+					    <a class="ab dropbtn" href="#">NHÀ ĐẸP</a><div class="dropdown-space"></div>
+					    <div class="dropdown-content">
+					      <a style="border:none;" href="#" title="">Nội thất</a>
+					      <a href="#" title="">Phong thủy</a>
+					      <a class="last-drop" href="#" title="">Màu sắc</a>
+					      
+					    </div>
+					</li>
+					<li><a class="ab" href="#">LIÊN HỆ</a><div class="dropdown-space"></div></li>
+					<li><a class="ab" href="#">GÓC MÔI GIỚI</a><div class="dropdown-space"></div></li>
+					<li><a class="ab" href="dangBai.php">ĐĂNG BÀI</a><div class="dropdown-space"></div></li>
+				</ul>
+					
+				</div>
+			</div>
+			<div class="header-content"><div class="">
+				<div class="wrap1"><div class="box">
+					<div class="box-1">
+						<img src="image/logo2.png" alt="">
+						<a href="#" title=""><h3>Đăng tin bán và cho thuê</h3>
+						</a>						
+					</div>
+					<div class="box-2" style="">
+						<img src="image/logo4.png" alt="">
+						<div class="box-dn">
+							<a href="#">Đăng nhập</a>
+								<div class="form-dang-nhap">
+        					<div class="frm-content" >
+            					<form>
+            						<div class="login">
+										<div class="box-top">
+											<img src="image/box-top.png" alt="">
+										</div>
+
+										<div class="login-form" >
+										
+											<div class="login-content">
+												<div class="username">
+													<div>Tên đăng nhập: </div> <input type="text">
+													</div><br>
+
+												<div class="username">
+													<div>Mật khẩu: </div> <input type="text">
+													</div>
+
+												<div class="login-1">
+													<input type="checkbox" id="ossm1" name="ossm1"><label for="ossm1">Nhớ mật khẩu </label>
+													<img src="image/lock.png" alt="">
+													<a href="#">Quên mật khẩu</a>
+												</div>
+											</div>
+									
+											<div class="login-footer">
+												
+													<a class="btn-eff" href="#">Đăng nhập 
+														</a>
+													
+												
+												
+												<a class="btn-eff" href="#">Đăng ký
+													
+												</a>
+											</div>
+										</div>
+									</div>		
+            					</form>
+        				</div>	
+    				</div>
+				</div>			
+								
+    			</div>
+							<div class="box-dk"> <a href="#"> / Đăng ký</a>
+								<div class="form-dang-nhap">
+        					<div class="frm-content" >
+            					<form>
+            						<div class="login">
+										<div class="box-top">
+											<img src="image/box-top.png" alt="">
+										</div>
+
+										<div class="login-form" >
+										
+											<div class="login-content">
+												<div class="username">
+													<div>Tên đăng nhập:</div> <input type="text">
+													</div><br>
+
+												<div class="username">
+													<div>Mật khẩu: </div> <input type="text">
+													</div>
+
+												<div class="login-1">
+													<input type="checkbox" id="ossm" name="ossm"><label for="ossm">Nhớ mật khẩu </label>
+													<img src="image/lock.png" alt="">
+													<a href="#">Quên mật khẩu</a>
+												</div>
+											</div>
+									
+											<div class="login-footer">
+												<a class="btn-eff" href="#">Đăng nhập
+													
+												</a>
+												<a class="btn-eff" href="#">Đăng ký
+													
+												</a>
+											</div>
+										</div>
+									</div>		
+            					</form>
+        				</div>	
+    				</div>
+							</div>
+						
+							
+		</div>
+					
+				</div>
+	
+
+				<div class="form wrap-main-content">
+					<a href="#"><img src="image/left-slide.png" onclick="plusDivs(-1)" alt=""></a>
+					<div class="container">
+						<div class="form-header" style="">
+							<img src="image/logo1.png" style="float: left;">
+							<h3>Tìm kiếm</h3>
+						</div>
+						<div class="form-content">
+							<li><a class="ember" href=""> <img src="image/1.png" alt="">Nhà thuê	</a>
+							</li>
+							<li>
+								<a class="ember" href="#"> <img src="image/2.png" alt="">Nhà bán</a>
+							</li>
+							<li>
+								<a class="ember" href="#"> <img src="image/3.png" alt="">Chuyển nhượng</a>
+							</li>
+						</div>
+						<div class="form-search">
+							<input type="text" placeholder="Tìm kiếm theo: Địa chỉ, Thành phố, Quận, Phường,... ">
+							<span><a href="#"><img src="image/search.png" alt=""></a></span>
+
+
+						</div>
+					</div><a href="#"><img src="image/right-slide.png" onclick="plusDivs(1)" alt=""></a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+		 
+
+      
+	</header>
+
+	<section class="main-reason">
+
+		<div class="main-content">
+			<h3 class="main-title">Tại sao bạn chọn nhanhanha.vn</h3>
+			<div class="support">
+				<a href="#">
+					<img src="image/sp.png" alt=""><span>Hỗ trợ Online</span>
+				</a>
+			</div>
+			<div class="reason">
+				<div class="reason-1">
+					<div class="reason-image">
+						<img src="image/rs1.png" alt="">
+					</div>
+					<div class="reason-text">
+						<h3>Có hàng trăm <br><span>thông tin nhà đất</span></h3><br>
+						<p>Chúng tôi liên tục cập nhật thông tin nhà đất mới nhất cho quý khách lựa chọn.</p>
+					</div>
+				</div>
+				<div class="reason-2">
+					<div class="reason-image">
+						<img src="image/rs2.png" alt="">
+					</div>
+					<div class="reason-text">
+						<h3>Tìm nhà như ý <br><span class="chu-nghieng">“lại không mất phí”</span></h3><br>
+						<p>Gửi thông tin yêu cầu của bạn và chúng tôi sẽ tìm căn nhà mong muốn mà không mất phí của khách thuê nhà.</p>
+					</div>
+				</div>
+				<div class="reason-3">
+					<div class="reason-image">
+						<img src="image/rs3.png" alt="">
+					</div>
+					<div class="reason-text">
+						<h3>Thu thập đầy đủ<br><span>thông tin về ngôi nhà</span></h3><br>
+						<p>Hình ảnh, video clip, thông tin phong thuỷ, thông tin diện tích nhà đất.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<footer class="">
+		<div class="top-footer">
+			<div class="wrap-footer">
+			<a href="#">Giới thiệu</a>
+			<a href="#">Điều khoản thỏa thuận</a>
+			<a href="#">Quy định sử dụng</a>
+			<a href="#">Những câu hỏi thường gặp</a>
+			<a href="#">Liên hệ</a>
+		</div></div>
+		<div class="bottom-footer">
+			<div class="wrap-footer">
+				<div class="lo">&copy;	2013 Nhà Nhà Nhà</div>
+				<div class="rem">
+					<li>
+						Follow us 
+					</li>
+					<li><a href="#" title=""><img src="image/social-1.png" alt=""></a></li>
+					<li><a href="#" title=""><img src="image/social-2.png" alt=""></a></li>
+					<li><a href="#" title=""><img src="image/social-3.png" alt=""></a></li>
+						
+					
+				
+					
+				</div>
+			</div>
+			
+		</div>
+	</footer>
+</body>
+</html>
